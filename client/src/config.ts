@@ -29,7 +29,7 @@ export const heroConfig = {
 }
 
 export const manifestoConfig = {
-  videoPath: "/videos/manifesto.mp4",
+  videoPath: "", // Optional: add video path to /public/videos/manifesto.mp4
   text: "Our mission is to create an open, distributed lunar observatory network that democratizes access to astronomical data. By combining autonomous collection with public archives, we enable researchers worldwide to participate in continuous lunar monitoring and discovery.",
 }
 
@@ -49,7 +49,7 @@ export const facilitiesConfig = {
       phone: "+1 (555) 001-0001",
       ctaText: "View Data Stream",
       ctaHref: "#",
-      image: "/images/facility-alpha.jpg",
+      image: "/images/facility-alpha.png",
       utcOffset: 0,
       article: {
         title: "Station Alpha: Polar Monitoring",
@@ -70,7 +70,7 @@ export const facilitiesConfig = {
       phone: "+1 (555) 001-0002",
       ctaText: "View Data Stream",
       ctaHref: "#",
-      image: "/images/facility-beta.jpg",
+      image: "/images/facility-beta.png",
       utcOffset: 0,
       article: {
         title: "Station Beta: Tranquility Basin",
@@ -91,7 +91,7 @@ export const facilitiesConfig = {
       phone: "+1 (555) 001-0003",
       ctaText: "View Data Stream",
       ctaHref: "#",
-      image: "/images/facility-gamma.jpg",
+      image: "/images/facility-gamma.png",
       utcOffset: 0,
       article: {
         title: "Station Gamma: Impact Analysis",
@@ -112,7 +112,7 @@ export const facilitiesConfig = {
       phone: "+1 (555) 001-0004",
       ctaText: "View Data Stream",
       ctaHref: "#",
-      image: "/images/facility-delta.jpg",
+      image: "/images/facility-delta.png",
       utcOffset: 0,
       article: {
         title: "Station Delta: Polar Crater Observatory",
@@ -128,7 +128,7 @@ export const facilitiesConfig = {
 
 export const observationConfig = {
   sectionLabel: "LIVE OBSERVATION FEED",
-  videoPath: "/videos/observation.mp4",
+  videoPath: "", // Optional: add video path to /public/videos/observation.mp4
   statusText: "STREAM ACTIVE · SIGNAL: 98.7% · UPTIME: 347d 12h",
   latLabel: "LAT",
   lonLabel: "LON",
@@ -142,19 +142,19 @@ export const archivesConfig = {
   closeText: "CLOSE",
   items: [
     {
-      src: "/images/archive-01.jpg",
+      src: "/images/archive-01.png",
       label: "Lunar Terminator · 2024",
     },
     {
-      src: "/images/archive-02.jpg",
+      src: "/images/archive-02.png",
       label: "Mare Imbrium Study · 2024",
     },
     {
-      src: "/images/archive-03.jpg",
+      src: "/images/archive-03.png",
       label: "Polar Region Mapping · 2024",
     },
     {
-      src: "/images/archive-04.jpg",
+      src: "/images/archive-04.png",
       label: "Crater Analysis · 2024",
     },
   ],
