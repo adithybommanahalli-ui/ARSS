@@ -7,6 +7,7 @@ import MagneticButton from '../components/ui/MagneticButton';
 import RevealOnScroll, { RevealChild } from '../components/ui/RevealOnScroll';
 import { AnimatedText, GradientText } from '../components/ui/AnimatedText';
 import AnimatedCounter from '../components/ui/AnimatedCounter';
+import ScrollFloat from '../components/ui/ScrollFloat';
 
 const FEATURES = [
   {
@@ -151,7 +152,9 @@ export default function LandingPage() {
             <AnimatedText text="Know Your" delay={0.2} stagger={0.08} />
             <br />
             <GradientText>
-              <AnimatedText text="Resume Score" delay={0.5} stagger={0.08} />
+              <ScrollFloat animationDuration={1.2} ease="back.inOut(1.5)" scrollStart="center bottom+=100%" scrollEnd="center center" stagger={0.04}>
+                Resume Score
+              </ScrollFloat>
             </GradientText>
             <br />
             <AnimatedText text="Before They Do" delay={0.8} stagger={0.08} />
@@ -310,7 +313,7 @@ export default function LandingPage() {
         </RevealOnScroll>
       </section>
 
-      {/* ─── Footer ───────────────────────────────────── */}
+      {/* ─── Footer ─────────────────────────────���─────── */}
       <footer className="border-t border-white/5 py-10 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">

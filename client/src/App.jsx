@@ -1,7 +1,6 @@
 import { Suspense, lazy, useState, useCallback } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import CustomCursor from './components/ui/CustomCursor'
 import PageLoader from './components/ui/PageLoader'
 
 // Lazy-loaded pages
@@ -52,7 +51,6 @@ export default function App() {
   return (
     <>
       {!loaded && <PageLoader onComplete={handleLoaded} />}
-      <CustomCursor />
       <BrowserRouter>
         <Suspense fallback={<Fallback />}>
           <Routes>
